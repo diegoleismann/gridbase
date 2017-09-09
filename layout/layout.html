@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+  <title>GRID</title>
+</head>
+<link href="http://localhost:4500/layout/spectre.min.css" type="text/css" rel="stylesheet" />
+<style type="text/css">
+html, body{margin: 0px; padding: 0px;}
+form{
+  padding:10px;
+}
+#topmenu{
+  background-color: #ccc;
+  display: block;
+  width:100%;
+}
+#topmenu button{
+  background-color: #333;
+  border: none;
+  padding: 10px 20px;
+  font-family: "Droid Sans",sans-serif;
+  color:#fff;
+}
+textarea{
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+</style>
+<body>
+<form action="http://localhost:4500" method="get">
+  <div id="topmenu">
+    <button>Consultar</button>
+  </div>
+  <textarea name="query" rows="10">{{query}}</textarea>
+  <p>result</p>
+  <code id="result">
+    
+  </code>
+</form>
+</body>
+<script src="http://localhost:4500/layout/jquery-3.2.1.min.js" type="text/javascript"></script>
+<script type=text/javascript>
+  $(document).ready(function(){
+
+  })
+</script>
+</html>
