@@ -1,0 +1,8 @@
+{
+  "name": "base",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon db.js --ignore content/"
+  }
+}
