@@ -3,6 +3,6 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "nodemon db.js --ignore content/"
+    "start": "mkdir content/ && nodemon db.js --ignore content/"
   }
 }
