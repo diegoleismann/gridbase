@@ -1,3 +1,5 @@
+var port = process.env.PORT || 4500;
+
 fs = require('fs');
 url = require("url");
 var view = require('./layout.js');
@@ -153,4 +155,6 @@ var server = http.createServer(function(request, response){
     show(response, 'Não há methodos post')
   }
 
-}).listen('4500');
+}).listen(port, function(){
+  console.log('Our app is running on http://localhost:' + port);
+});
